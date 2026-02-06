@@ -4,6 +4,7 @@ import RequireAuth from './middleware/RequireAuth';
 import Profile from './components/Profile'; 
 import Login from './components/Login'; 
 import Logout from './components/Logout'; 
+import UserManagement from './components/UserManagement';
  
 function App() { 
  
@@ -21,6 +22,11 @@ function App() {
           <Logout/> 
         </RequireAuth> 
       }/> 
+      <Route path='/users' element={
+        <RequireAuth>
+          <UserManagement/>
+        </RequireAuth>
+      }/>
     </Routes> 
   ); 
 } 
