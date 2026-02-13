@@ -23,3 +23,10 @@ dist-ssr
 *.sln
 *.sw?
 .serena
+
+# Playwright test files and outputs
+tests/
+test-results/
+playwright-report/
+playwright/
+playwright.config.js
